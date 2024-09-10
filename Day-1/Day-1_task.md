@@ -8,20 +8,20 @@ To check if Node.js is installed on your system, use the following command:
 
 ```bash
 node -v
-
-
-Step 2: Install Yarn
+```
+##Step 2: Install Yarn
 Medusa uses Yarn as its package manager. If you don’t have Yarn installed, you can install it using Homebrew:
 
-bash
-Copy code
+```bash
 brew install yarn
+```
 Verify the installation by checking Yarn's version:
 
-bash
-Copy code
+```bash
+
 yarn -v
-Step 3: Install Medusa CLI Globally
+```
+##Step 3: Install Medusa CLI Globally
 Once Node.js and Yarn are installed, you can install Medusa CLI globally using Yarn:
 
 bash

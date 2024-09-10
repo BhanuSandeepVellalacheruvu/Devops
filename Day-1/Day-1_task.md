@@ -1,6 +1,7 @@
 # Project can be found here
-```https://github.com/microCloudCode/my-medusa-store.git
-```
+
+https://github.com/microCloudCode/my-medusa-store.git
+
 # Installing Medusa CLI and Setting Up a New Medusa Store
 
 The Medusa CLI is a tool that helps developers create and manage Medusa.js e-commerce projects. Below is a detailed guide on how to install the Medusa CLI and set up a new project.

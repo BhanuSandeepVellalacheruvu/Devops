@@ -1,4 +1,4 @@
-#Project can be found here
+# Project can be found here
 ```https://github.com/microCloudCode/my-medusa-store.git
 ```
 # Installing Medusa CLI and Setting Up a New Medusa Store

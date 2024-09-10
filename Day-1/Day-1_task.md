@@ -25,29 +25,30 @@ yarn -v
 Once Node.js and Yarn are installed, you can install Medusa CLI globally using Yarn:
 
 ```bash
-Copy code
-```
+
+
 yarn global add @medusajs/medusa-cli
+```
+
 This command installs Medusa CLI globally on your system, making it accessible from any directory.
 
 ##  Step 4: Verify Medusa CLI Installation
 To ensure the CLI was installed correctly, check its version:
 
 ```bash
-Copy code
 medusa --version
 ```
 ## Step 5: Create a New Medusa Store
 Now that Medusa CLI is installed, you can create a new Medusa store project:
 
 ```bash
-Copy code
+
 medusa new my-medusa-store
 ```
 If you see an error indicating that the directory already exists, you can delete it using the following command:
 
 ```bash
-Copy code
+
 sudo rm -r my-medusa-store
 ```
 Then, rerun the medusa new command to set up your new store.
@@ -56,7 +57,7 @@ Then, rerun the medusa new command to set up your new store.
 Medusa will automatically install all required dependencies for your project. If you encounter warnings or errors related to deprecated packages, they can be ignored for now, but consider running:
 
 ```bash
-Copy code
+
 npm audit fix
 ```
 This will fix non-breaking vulnerabilities, and you can run the following to fix all issues:
@@ -73,7 +74,6 @@ Medusa will prompt you to set up a PostgreSQL database with credentials. You can
 After the database setup is complete, you can navigate to your project directory and start the development server:
 
 ```bash
-Copy code
 cd my-medusa-store
 medusa develop
 ```

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: bhanusandeepvellalacheruvu
+      POSTGRES_PASSWORD: hehe
+      POSTGRES_DB: medusa-db-e1n7k
+    volumes:
+      - medusa-data:/var/lib/postgresql/data
+    networks:
+      - medusa-network
+
+  medusa:
+    build: .
+    ports:
+      - "9000:9000"
+    environment:
+      DATABASE_URL: postgres://bhanusandeepvellalacheruvu:hehe@db:5432/medusa-db-e1n7k
+    depends_on:
+      - db
+    networks:
+      - medusa-network
+    command: ["sh", "-c", "npm run seed && npx medusa user -e sam@sam.com -p sam && medusa migrations run && npm run start"]
+
+volumes:
+  medusa-data:
+
+networks:
+  medusa-network:

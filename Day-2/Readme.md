@@ -36,14 +36,7 @@ Explanation:
 4. Check Container Logs
 To view the logs of the running containers:
 
-```bash
-docker-compose logs
-```
-Explanation:
 
-docker-compose logs: This command displays the logs from all containers. It helps you monitor the output and troubleshoot any issues that occur during runtime.
-5. Stop the Docker Containers
-To stop the running containers:
 
 ```bash
 docker-compose down
@@ -53,10 +46,3 @@ Explanation:
 docker-compose down: This command stops and removes the containers created by docker-compose up. It also removes any networks defined in the docker-compose.yml file.
 6. View Container Status
 To check the status of the running containers:
-
-```bash
-docker-compose ps
-```
-Explanation:
-
-docker-compose ps: This command lists all the containers defined in the docker-compose.yml file, showing their current status (e.g., running, exited)
